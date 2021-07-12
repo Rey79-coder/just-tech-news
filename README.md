@@ -19,6 +19,7 @@
     This webpage connects with an API about news in technology. 
 ## Installation:
     Dowload it and run it by using node, make sure you have installed npm require, inquirer,express, MySQL, and SEQUELIZE.
+    npm install express sequelize mysql2.
 ## Usage:
     You use it for your own purposes.
 ## Licenses:
