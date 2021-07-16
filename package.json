@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Rey79-coder/just-tech-news#readme",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "connection-manager": "^1.0.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
@@ -27,4 +28,5 @@
     "require": "^2.4.20",
     "sequelize": "^6.6.5"
   }
+  
 }
