@@ -1,9 +1,12 @@
 const express = require('express');
 const routes = require('./routes');
 const sequelize = require('./config/connection');
+var validator = require('validator');
+
+validator.isEmail('lerantino@gmail.com'); //=> true
 
 const app = express();
-const PORT = process.env.PORT || 3077;
+const PORT = process.env.PORT || 3001;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -12,6 +15,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(routes);
 
 // turn on connection to db and server
-sequelize.sync({ force: true }).then(() => {
-  app.listen(PORT, () => console.log('Now listening in port 3077'));
+sequelize.sync({ force: false }).then(() => {
+  app.listen(PORT, () => console.log('Now listening'));
 });
