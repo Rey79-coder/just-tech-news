@@ -22,7 +22,7 @@
 ## Contribution:
     Contact me.
 ## Link:
-    https://github.com/Rey79-coder/just-tech-news/issues
+    https://github.com/Rey79-coder/just-tech-news
 ## Questions:
     What's the marketing application of this?
 ## email:
