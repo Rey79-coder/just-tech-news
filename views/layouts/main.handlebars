@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Just Tech News</title>
+  <title>Echeriri News</title>
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
@@ -13,12 +13,15 @@
  
  <header>
     <h1>
-      <a href="/">Just Tech News</a>
+      <a href="/">Echeriri News</a>
     </h1>
 
- <nav>
+<nav>
+  {{#if loggedIn}}
   <button id="logout" class="btn-no-style">logout</button>
+  {{else}}
   <a href="/login">login</a>
+  {{/if}}
 </nav>
 
   </header>
@@ -30,8 +33,10 @@
       Thanks for visiting!
     </footer>
   </div>
-  
-  <script src="/javascript/logout.js"></script>
+
+  {{#if loggedIn}}
+<script src="/javascript/logout.js"></script>
+{{/if}}
 </body>
 
 </html>
